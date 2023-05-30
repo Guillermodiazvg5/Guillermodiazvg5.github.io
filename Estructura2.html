@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculadora Interactiva para Niños</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>¡Bienvenido a la Calculadora Interactiva para Niños!</h1>
+	</header>
+
+	<main>
+		<form>
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" id="nombre" required>
+
+			<label for="edad">Edad:</label>
+			<input type="number" name="edad" id="edad" min="5" max="12" required>
+
+			<div id="operaciones">
+				<h2>¿Qué operación quieres hacer?</h2>
+				<select name="operacion" id="operacion">
+					<option value="sumar">Sumar</option>
+					<option value="restar">Restar</option>
+					<option value="multiplicar">Multiplicar</option>
+					<option value="dividir">Dividir</option>
+				</select>
+			</div>
+
+			<input type="submit" value="¡Calcular!">
+		</form>
+
+		<div id="resultado"></div>
+	</main>
+
+	<footer>
+		<p>© 2021 Calculadora Interactiva para Niños 1.1 . Desarrollado por Poli.</p>
+	</footer>
+
+	<script src="logica1.js"></script>
+</body>
+</html>
